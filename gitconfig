@@ -1,0 +1,22 @@
+[user]
+	email = FIXME
+	name = Davy MELINA
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	d = difftool
+
+[diff]
+tool = vimdiff
+
+[difftool]
+prompt = false
+
+[push]
+	default = simple
+
+[color]
+	ui = true
+

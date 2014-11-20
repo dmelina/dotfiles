@@ -1,0 +1,6 @@
+URxvt*saveLines: 12000
+URxvt*foreground: White
+URxvt*background: Black
+URxvt*scrollBar: false
+URxvt*scrollBar_right: false
+URxvt*scrollstyle: rxvt
