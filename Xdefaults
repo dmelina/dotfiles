@@ -1,6 +1,9 @@
 URxvt*saveLines: 12000
+URxvt.depth: 24
 URxvt*foreground: White
-URxvt*background: Black
+URxvt.background: rgba:1111/1111/1111/dddd
 URxvt*scrollBar: false
 URxvt*scrollBar_right: false
 URxvt*scrollstyle: rxvt
+URxvt*font: xft:Bitstream Vera Sans Mono:pixelsize=12
+URxvt*color4: rgb:5c/5c/ff
