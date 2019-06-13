@@ -3,20 +3,23 @@
 	name = Davy MELINA
 [alias]
 	co = checkout
-	br = branch
+	br = branch -avv
 	ci = commit
 	st = status
 	d = difftool
+	fp = fetch --prune
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --all
 
 [diff]
-tool = vimdiff
+	tool = vimdiff
 
 [difftool]
-prompt = false
+	prompt = false
 
 [push]
 	default = simple
 
 [color]
 	ui = true
-
+[status]
+	submoduleSummary = true
