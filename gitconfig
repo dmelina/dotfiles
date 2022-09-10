@@ -1,14 +1,17 @@
 [user]
 	email = FIXME
 	name = Davy MELINA
+
 [alias]
 	co = checkout
-	br = branch -avv
+	br = branch
 	ci = commit
 	st = status
 	d = difftool
-	fp = fetch --prune
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --all
+	fp = fetch --prune --all
+	lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+  lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
 
 [diff]
 	tool = vimdiff
@@ -17,9 +20,12 @@
 	prompt = false
 
 [push]
-	default = simple
+	default = current
 
 [color]
 	ui = true
-[status]
-	submoduleSummary = true
+
+[commit]
+  template = ~/.gitmessage
+[init]
+	defaultBranch = main
